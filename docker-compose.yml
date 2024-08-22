@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  backend:
+    image: datarhei/restreamer:latest
+    container_name: core
+    privileged: true
+    volumes:
+      - /opt/core/config:/core/config
+      - /opt/core/data:/core/data
+    ports:
+      - "8080:8080"
+      - "8181:8181"
+      - "1935:1935"
+      - "1936:1936"
+      - "6000:6000/udp"
+    environment:
+      - CORE_CONFIGFILE=/core/config/config.json
+      - CORE_STORAGE_DISK_DIR=/core/data
+      - CORE_DB_DIR=/core/config
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_BACKEND_URL=http://backend:8080
+    restart: unless-stopped
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
