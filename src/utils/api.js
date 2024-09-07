@@ -1,7 +1,7 @@
 class API {
 	constructor(address) {
 		this.base = '/api';
-		this.address = "http://localhost:8080";
+		this.address = "http://core:8080";
 		this.token = '';
 
 		this.cache = new Map();

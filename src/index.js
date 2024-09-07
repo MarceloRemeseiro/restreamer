@@ -8,7 +8,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from './theme';
 import RestreamerUI from './RestreamerUI';
 
-let address = 'http://localhost:8080';
+let address = 'http://core:8080';
 if (window.location.pathname.endsWith('/ui/')) {
 	address += window.location.pathname.replace(/ui\/$/, '');
 }
