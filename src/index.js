@@ -5,11 +5,10 @@ import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
 import '@fontsource/dosis';
 import '@fontsource/roboto';
 import CssBaseline from '@mui/material/CssBaseline';
-
 import theme from './theme';
 import RestreamerUI from './RestreamerUI';
 
-let address = window.location.protocol + '//' + window.location.host;
+let address = 'http://localhost:8080';
 if (window.location.pathname.endsWith('/ui/')) {
 	address += window.location.pathname.replace(/ui\/$/, '');
 }
@@ -22,8 +21,8 @@ if (urlParams.has('address') === true) {
 createRoot(document.getElementById('root')).render(
 	<StyledEngineProvider injectFirst>
 		<ThemeProvider theme={theme}>
-			<CssBaseline />
-			<RestreamerUI address={address} />
+				<CssBaseline />
+				<RestreamerUI address={address} />
 		</ThemeProvider>
-	</StyledEngineProvider>
+	</StyledEngineProvider>,
 );

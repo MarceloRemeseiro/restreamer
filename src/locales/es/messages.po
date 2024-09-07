@@ -3361,8 +3361,8 @@ msgid "We recommend OpenMAX IL for Raspberry PI (3/4) with a 32-bit operating sy
 msgstr "Recomendamos OpenMAX IL para Raspberry PI (3/4) con un sistema operativo de 32 bits."
 
 #: src/views/Welcome.js:27
-msgid "Welcome to Restreamer v2, the solution for fast and easy video publishing. Free for private and commercial use. Further help in the <0>docs</0>."
-msgstr "Bienvenido a Restreamer v2, la solución para la publicación rápida y sencilla de vídeos. Gratis para uso privado y comercial. Más ayuda en los <0>docs</0>."
+msgid "Welcome to StreamingPro, the solution for fast and easy video publishing. Free for private and commercial use. Further help in the <0>docs</0>."
+msgstr "Bienvenido a StreamingPro, la solución para la publicación rápida y sencilla de vídeos. Gratis para uso privado y comercial. Más ayuda en los <0>docs</0>."
 
 #: src/misc/coders/Encoders/video/av1_librav1e.js:104
 msgid "What speed preset to use."

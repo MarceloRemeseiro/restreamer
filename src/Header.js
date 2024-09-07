@@ -23,7 +23,6 @@ import TranslateIcon from '@mui/icons-material/Translate';
 import Typography from '@mui/material/Typography';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import WebIcon from '@mui/icons-material/Web';
-
 import * as Storage from './utils/storage';
 import * as Version from './version';
 import welcomeImage from './assets/images/welcome.png';
@@ -165,47 +164,47 @@ function AboutModal(props) {
 
 	return (
 		<Modal open={props.open} onClose={props.onClose} className="modal">
-			<ModalContent title="About datarhei Restreamer" onClose={props.onClose} className={classes.modalPaper}>
+			<ModalContent title="About StreamingPro Restreamer" onClose={props.onClose} className={classes.modalPaper}>
 				<Grid container spacing={1}>
 					<Grid item xs={12} className={classes.aboutImage}>
-						<PaperThumb image={welcomeImage} title="Welcome to Restreamer v2" height="200px" />
+						<PaperThumb image={welcomeImage} title="Welcome to StreamingPro" height="200px" />
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1">
 							This is the frontend and a part of a free open source livestreaming solution for video data. The second part is the{' '}
-							<Link color="secondary" href="https://github.com/datarhei/core" target="_blank">
-								datarhei Core
+							<Link color="secondary" href="https://sincrosav.com" target="_blank">
+								StreamingPro Core
 							</Link>{' '}
 							which can be operated separately.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}></Grid>
 					<Grid item xs={12}>
-						<Typography>
+						{/* <Typography>
 							<strong>Release</strong>: {Version.UI}
-						</Typography>
-						<Typography>
+						</Typography> */}
+						{/* <Typography>
 							<strong>Repo</strong>:{' '}
-							<Link color="secondary" target="_blank" href="https://github.com/datarhei/restreamer">
+							<Link color="secondary" target="_blank" href="https://sincrosav.com">
 								github.com/datarhei/restreamer
 							</Link>
-						</Typography>
-						<Typography>
+						</Typography> */}
+						{/* <Typography>
 							<strong>Licence</strong>:{' '}
-							<Link color="secondary" target="_blank" href="https://github.com/datarhei/restreamer/blob/master/LICENSE">
+							<Link color="secondary" target="_blank" href="https://sincrosav.com">
 								Apache License 2.0
 							</Link>
-						</Typography>
-						<Typography>
+						</Typography> */}
+						{/* <Typography>
 							<strong>Donation</strong>:{' '}
 							<Link color="secondary" target="_blank" href="https://patreon.com/datarhei/">
 								patreon.com/datarhei
 							</Link>
-						</Typography>
+						</Typography> */}
 						<Typography>
 							<strong>Website</strong>:{' '}
-							<Link color="secondary" target="_blank" href="https://datarhei.com">
-								datarhei.com
+							<Link color="secondary" target="_blank" href="https://sincrosav.com">
+								sincrosav.com
 							</Link>
 						</Typography>
 					</Grid>
@@ -288,12 +287,12 @@ function HeaderMenu(props) {
 						</ListItemIcon>
 						<Trans>Docs</Trans>
 					</MenuItem>
-					<MenuItem component="a" href="https://github.com/datarhei/restreamer/issues" target="blank">
+					{/* <MenuItem component="a" href="https://github.com/datarhei/restreamer/issues" target="blank">
 						<ListItemIcon>
 							<BugReportIcon fontSize="small" />
 						</ListItemIcon>
 						<Trans>Issue alert</Trans>
-					</MenuItem>
+					</MenuItem> */}
 					<MenuItem>
 						<ListItemIcon>
 							<TranslateIcon fontSize="small" />

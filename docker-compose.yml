@@ -28,11 +28,11 @@ services:
       dockerfile: Dockerfile
     container_name: frontend
     ports:
-      - "5000:3000"
+      - "3000:3000"
     depends_on:
       - backend
     environment:
-      - REACT_APP_BACKEND_URL=http://backend:8080
+      - REACT_APP_BACKEND_URL=http://core:8080
     restart: unless-stopped
     networks:
       - app-network

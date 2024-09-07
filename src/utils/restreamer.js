@@ -17,12 +17,6 @@ import { anonymize } from './anonymizer';
 
 class Restreamer {
 	constructor(address) {
-		try {
-			new URL(address);
-		} catch (e) {
-			address = window.location.protocol + '//' + window.location.host;
-		}
-
 		// Remove the / at the end
 		if (address.slice(-1) === '/') {
 			address = address.slice(0, -1);

@@ -368,6 +368,7 @@ const initVersion = (initialVersion) => {
 };
 
 export default function Footer(props) {
+	const nombre= "StreamingPro"
 	const classes = useStyles();
 	/* const version = initVersion(props.version); */
 
@@ -377,8 +378,8 @@ export default function Footer(props) {
 				<Grid item xs={12}>
 					<Stack direction="row" justifyContent="space-between" alignItems="center" spacing={0}>
 						<Stack className="footerLeft" direction="row" alignItems="center" spacing={0}>
-							{/* <Logo className={classes.logo} /> */}StreamingPro
-							<Typography className="footerVersion"> By Mabedev </Typography>
+							{/* <Logo className={classes.logo} /> */}{nombre}
+							<Typography className="footerVersion"> | By Mabedev </Typography>
 						</Stack>
 						<Resources resources={props.resources} />
 					</Stack>

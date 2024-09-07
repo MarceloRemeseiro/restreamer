@@ -1244,7 +1244,7 @@ export default function Settings(props) {
 							<Grid container spacing={2}>
 								<Grid item xs={12}>
 									<Grid item xs={12}>
-										<PaperThumb image={settingsImage} title="Welcome to Restreamer v2" height="200px" />
+										<PaperThumb image={settingsImage} title="Welcome to StreamingPro" height="200px" />
 									</Grid>
 								</Grid>
 								<Grid item xs={12}>
